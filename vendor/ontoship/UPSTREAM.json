@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/vakovalskii/ontoship",
+  "commit": "3792acb40b4d631fb7b94b5fdc149e9a8ef2032d",
+  "source_path": "skills/kb-search/gitmark.py",
+  "retrieved": "2026-10-03",
+  "license": "MIT",
+  "sha256_lf": {
+    "gitmark.py": "12872be9ca2864accf13a445986bf1615b249513a8c937bba1d0a54446144b51",
+    "LICENSE": "942d0b22fb84d16f756a9118578cb9545bd91e73ceb4882a09deb01f8d254d49"
+  }
+}

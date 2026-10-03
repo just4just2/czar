@@ -1,0 +1,12 @@
+.gitmark/
+docs/docs-map.html
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+sources/*
+!sources/README.md
+.DS_Store
+Thumbs.db
