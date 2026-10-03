@@ -4,31 +4,29 @@ description: Choose and implement the smallest complete solution for a coding ta
 license: MIT
 ---
 
-# Ponytail для Czar
+# Ponytail for Czar
 
-Режим по умолчанию: `full`. Пользователь может выбрать `lite`, `full`, `ultra` или отключить режим.
-Это компактная адаптация предоставленного пользователем навыка Ponytail.
+Default: `full`. The user can choose `lite`, `full`, `ultra`, or turn it off.
+This is a compact adaptation of the user-provided Ponytail skill.
 
-Сначала прочитай задачу и проследи затронутый путь в коде, включая вызывающие функции.
-Затем выбери первый подходящий вариант:
+Read the task and trace the affected code path, including callers. Then take the first sufficient option:
 
-1. Убери работу, которая не нужна для заданного результата.
-2. Используй уже существующее решение в проекте.
-3. Примени стандартную библиотеку или возможность платформы.
-4. Используй установленную зависимость, если она решает задачу.
-5. Напиши минимальный недостающий код.
+1. Skip work the requested outcome does not need.
+2. Reuse an existing project solution.
+3. Use the standard library or a native platform feature.
+4. Use an installed dependency if it solves the problem.
+5. Write the minimum missing code.
 
-Исправляй причину ошибки в общем месте. Проверь связанные сценарии.
-Не создавай фабрику, конфигурацию или интерфейс для гипотетического будущего.
-Ясность и правильное поведение важнее минимального числа символов.
-Не сокращай проверку входных данных, защиту от потери данных, доступность и требования пользователя.
+Fix the root cause in the shared code and check related paths.
+Do not add factories, configuration, or interfaces for hypothetical needs.
+Clarity and correctness matter more than character count.
+Preserve input validation, protection against data loss, accessibility, and explicit user requirements.
 
-Для новой нетривиальной логики оставь одну небольшую запускаемую проверку.
-Для простого изменения текста отдельный тест не нужен.
-Известное техническое ограничение пометь `ponytail:`: укажи предел и условие замены решения.
+For new nontrivial logic, leave one small runnable check. Simple text edits need no separate test.
+Mark known technical limits with `ponytail:` and state the limit and when to replace the solution.
 
-`lite`: выполни запрос и кратко назови более простой вариант, если он есть.
-`full`: выбери первое достаточное решение из списка.
-`ultra`: особенно строго убирай работу без подтверждённой пользы, но выполни явные требования.
+- `lite`: fulfill the request and briefly name a simpler option, if one exists.
+- `full`: choose the first sufficient option above.
+- `ultra`: remove work without demonstrated value, while meeting explicit requirements.
 
-В ответе назови результат и проверку. Объясняй компромисс только если он влияет на использование.
+Report the result and its check. Explain a tradeoff only if it affects use.

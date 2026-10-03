@@ -4,59 +4,60 @@ description: Simplify technical explanations, README text, procedures, and chang
 license: MIT
 ---
 
-# Техническое упрощение
+# Technical simplification
 
-По умолчанию используй `practical`. Сохраняй язык пользователя и нужную глубину объяснения.
-Сначала установи, что читатель должен понять или сделать. Раздели описание системы и шаги действий.
+Default to `practical`. Follow the response-language rule in `AGENTS.md`: Russian unless explicitly requested otherwise.
+When editing text, preserve its language unless translation is requested. Keep the required depth of explanation.
+Identify what the reader must understand or do. Separate system descriptions from action steps.
 
 ## Practical
 
-Пиши знакомыми словами и называй исполнителя действия. Одна команда — одно основное действие.
-Сохраняй условия, отрицания, единицы, ограничения, степень уверенности и порядок шагов.
-Код, флаги, API-имена, URL, цитаты и числовые значения не перефразируй.
-Для одного понятия используй один термин. Сверяй термины с `docs/reference/glossary.md`.
-Объясни нужный технический термин при первом появлении; не заменяй его неточным бытовым словом.
+Use familiar words and name the actor. Give one main action per instruction.
+Preserve conditions, negations, units, limits, uncertainty, and step order.
+Keep code, flags, API names, URLs, quotations, and numeric values unchanged.
+Use one term per concept; consult `docs/reference/glossary.md`.
+Explain necessary technical terms on first use instead of replacing them with imprecise everyday words.
 
-Для английского ориентируйся на краткие предложения: до 20 слов в командах и до 25 слов в описаниях.
-Держи один предмет обсуждения в абзаце и не более шести предложений.
-Предпочитай активный залог и простые времена; разделяй длинные цепочки существительных.
-Для русского это ориентиры редактора, а не правила соответствия английскому стандарту.
-Не убирай содержание, чтобы уложиться в число слов. Раздели предложение или добавь короткое пояснение.
+For English, aim for at most 20 words per instruction and 25 per descriptive sentence.
+Keep one topic and at most six sentences per paragraph.
+Prefer active voice and simple tenses. Break up long noun clusters.
+For Russian, these are editing guidelines, not English-standard compliance rules.
+Do not remove meaning to meet a word limit. Split the sentence or add a short explanation.
 
-Если связи понятнее на схеме, используй Mermaid. Для выбора сценариев подойдёт автономный HTML.
-Смена формата не должна скрывать неопределённость или подменять проверку красивой картинкой.
+Use Mermaid when a diagram clarifies relationships, or standalone HTML for switching scenarios.
+A different format must not hide uncertainty or replace verification with a polished image.
 
 ## Strict
 
-Применяй только по запросу строгой проверки. ASD-STE100 — стандарт английского языка.
-Если текст на другом языке, предложи английский вариант либо явно назови результат адаптацией.
+Use only when strict review is requested. ASD-STE100 is an English-language standard.
+For other languages, offer an English version or explicitly label the result an adaptation.
 
-Для проверки нужны официальная спецификация нужной редакции и её словарь, а также согласованные технические термины.
-Проверь написание, значение и часть речи каждого обычного слова по словарю.
-Проверь применимые правила для процедур и описаний, включая форму глаголов, построение предупреждений и подсчёт слов.
-Если материалов нет, выполни полезное упрощение и укажи: «Черновик; соответствие ASD-STE100 не проверено».
-Не заявляй о сертификации или полном соответствии по эвристике, памяти модели или счётчику слов.
-Не включай полный словарь или текст стандарта в результат без разрешения на распространение.
+Review requires the requested edition of the official specification and dictionary, plus agreed technical terms.
+Check each ordinary word's spelling, meaning, and part of speech against the dictionary.
+Check applicable procedural and descriptive rules, including verb forms, warning structure, and word counts.
+If the materials are unavailable, simplify the text and state in the response language that the draft has not been checked for ASD-STE100 compliance.
+Do not claim certification or full compliance based on heuristics, model memory, or a word counter.
+Do not reproduce the full dictionary or standard without redistribution permission.
 
-## Самопроверка
+## Self-check
 
-Сопоставь исходник и результат: кто действует, что делает, при каких условиях и с каким результатом.
-Не превращай «может» в «будет» и «рекомендуется» в «обязательно».
-Не добавляй отсутствующие причины, гарантии или шаги, особенно в опасных процедурах.
-Верни готовый текст. Добавь краткое замечание только при реальной неоднозначности или непроверенном строгом режиме.
+Compare source and result: who acts, what they do, under which conditions, and with what outcome.
+Do not turn "may" into "will" or "recommended" into "required".
+Do not invent causes, guarantees, or steps, especially in hazardous procedures.
+Return the edited text. Add a short note only for actual ambiguity or unverified strict review.
 
-Пример EN:
+Request example:
 
 > Before: If the request times out, it may be retried once; do not retry HTTP 401 responses.
 >
 > After: If the request times out, you can retry it once. Do not retry a request that returns HTTP 401.
 
-Пример RU:
+Documentation example:
 
-> Было: После осуществления модификации документации необходимо обеспечить актуализацию поискового индекса.
+> Before: After modifying the documentation, it is necessary to ensure the search index is updated.
 >
-> Стало: После изменения документации обновите поисковый индекс.
+> After: After you change the documentation, update the search index.
 
-Это оригинальные примеры Czar, а не утверждение об одобрении слов официальным словарём.
-Источник принципов: [ASD-STE100 Issue 9](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf).
-Границы использования: `docs/reference/sources.md`.
+These are original Czar examples, not claims of official dictionary approval.
+Principles: [ASD-STE100 Issue 9](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf).
+Source and usage limits: `docs/reference/sources.md`.
