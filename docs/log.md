@@ -22,3 +22,10 @@ title: Журнал памяти
 Линтер Ontoship: 9 документов, без ошибок и предупреждений.
 HTML-карта: 9 документов и 28 связей. Три SKILL.md прошли штатный валидатор skill-creator.
 Удалённый GitHub Actions и работа навыков внутри отдельной сессии Claude Code пока не проверены.
+
+## [2026-10-03] publish | GitHub template
+
+Шаблон опубликован в [just4just2/czar](https://github.com/just4just2/czar), ветка `main`.
+Включён режим Template repository; пользователи могут создавать свои проекты через Use this template.
+Для начального коммита `4095ef0` прошли оба задания GitHub Actions: Windows и Ubuntu.
+Результат: [Check starter, run 1](https://github.com/just4just2/czar/actions/runs/37138178334).
